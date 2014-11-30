@@ -525,20 +525,30 @@ numberOfRowsInComponent:(NSInteger)component
 
 -(int)getNotesIndexFromKey : (NSString *)key
 {
-    NSArray *notesArray = [noteDictionary allValues];
+    NSArray *floatsArray = [noteDictionary allKeys];
+    
+    NSLog(@"%@", floatsArray);
     
     // sort array block
-    NSArray *sortedArray = [notesArray sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
-        //NSLog(@"%@",[noteDictionary valueForKey:obj1]);
-        if ([[noteDictionary valueForKey:obj1]  floatValue] > [[noteDictionary valueForKey:obj2] floatValue])
+    NSArray *sortedArray = [floatsArray sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+        if ([obj1 floatValue] > [obj2 floatValue])
             return NSOrderedDescending;
-        else if ([[noteDictionary valueForKey:obj1] floatValue] < [[noteDictionary valueForKey:obj2] floatValue])
+        else if ([obj1 floatValue] < [obj2 floatValue])
             return NSOrderedAscending;
         return NSOrderedSame;
     }];
     
+    NSLog(@"%@", sortedArray);
+
+    
+    
     for (int i=0; i<sortedArray.count; i++) {
-        if ([key isEqual:sortedArray[i]]) {
+        NSLog(@"%@", sortedArray[i]);
+        
+        NSString *string  = [noteDictionary objectForKey:sortedArray[i]];
+        NSLog(@"string = %@", string);
+        if ([key isEqualToString:string]) {
+            NSLog(@"returning %@, index %d", sortedArray[i], i);
             return i;
         }
     }
@@ -1737,17 +1747,19 @@ numberOfRowsInComponent:(NSInteger)component
             NSNumberFormatter *fmt = [[NSNumberFormatter alloc] init];
             [fmt setPositiveFormat:@"0.##"];
             
-            
-            // fix loading
-            float upfloat = [upstring floatValue];
-            float lowfloat = [lowstring floatValue];
-            upfloat += 0.5;
-            lowfloat += 0.5;
-            
-            NSLog(@"low float %f up float %f", lowfloat, upfloat);
-            
-            upstring = [[NSNumber numberWithFloat:upfloat] stringValue];
-            lowstring = [[NSNumber numberWithFloat:lowfloat] stringValue];
+            if (!isNote) {
+                // fix loading
+                float upfloat = [upstring floatValue];
+                float lowfloat = [lowstring floatValue];
+                upfloat += 0.5;
+                lowfloat += 0.5;
+                
+                NSLog(@"low float %f up float %f", lowfloat, upfloat);
+                
+                upstring = [[NSNumber numberWithFloat:upfloat] stringValue];
+                lowstring = [[NSNumber numberWithFloat:lowfloat] stringValue];
+            }
+
             
             
             //NSLog(@"low %@ up %@", [fmt stringFromNumber:[NSNumber numberWithFloat:[lowVal floatValue]]], [fmt stringFromNumber:[NSNumber numberWithFloat:[upVal floatValue]]]);
@@ -1759,7 +1771,6 @@ numberOfRowsInComponent:(NSInteger)component
             //upnum = [NSNumber numberWithInt:[[slotDict valueForKey:@"UpperRangeValue"] integerValue]];
             
             if (isNote) {
-                NSLog(@"low = %@ up = %@", lownum, upnum);
                 NSLog(@"lows = %@ ups = %@", lowstring, upstring);
                 
                 lowIndex = [self getNotesIndexFromKey:lowstring];
@@ -1786,10 +1797,8 @@ numberOfRowsInComponent:(NSInteger)component
                 _frequencySlider.maximumValue = [[slotDict valueForKey:@"UpperRangeValue"] floatValue];
             }
             
-            NSLog(@"low = %d up = %d", lowIndex, upIndex);
+            NSLog(@"lowindex = %d upindex = %d", lowIndex, upIndex);
             
-            
-            NSLog(@"lowIndex %d and %d", lowIndex, upIndex);
             
             [_upperFrequencyPicker selectRow:upIndex inComponent:0 animated:YES];
             [_lowerFrequencyPicker selectRow:lowIndex inComponent:0 animated:YES];
