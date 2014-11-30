@@ -10,14 +10,14 @@
 	<string>SpineOMatic</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>670C5A47D86B257259B4B86D5D70074A9ECD57F7</key>
+		<key>BF46CAA26D646553A5D7DEC3B436B2CC7D9DF1BF</key>
 		<string>https://github.com/blacklotusi/spineomatic.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Somawave home/SpineOMatic/SpineOMatic.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>670C5A47D86B257259B4B86D5D70074A9ECD57F7</key>
+		<key>BF46CAA26D646553A5D7DEC3B436B2CC7D9DF1BF</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>670C5A47D86B257259B4B86D5D70074A9ECD57F7</string>
+	<string>BF46CAA26D646553A5D7DEC3B436B2CC7D9DF1BF</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>670C5A47D86B257259B4B86D5D70074A9ECD57F7</string>
+			<string>BF46CAA26D646553A5D7DEC3B436B2CC7D9DF1BF</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Somawave</string>
 		</dict>

@@ -1738,6 +1738,16 @@ numberOfRowsInComponent:(NSInteger)component
             [fmt setPositiveFormat:@"0.##"];
             
             
+            // fix loading
+            float upfloat = [upstring floatValue];
+            float lowfloat = [lowstring floatValue];
+            upfloat += 0.5;
+            lowfloat += 0.5;
+            
+            NSLog(@"low float %f up float %f", lowfloat, upfloat);
+            
+            upstring = [[NSNumber numberWithFloat:upfloat] stringValue];
+            lowstring = [[NSNumber numberWithFloat:lowfloat] stringValue];
             
             
             //NSLog(@"low %@ up %@", [fmt stringFromNumber:[NSNumber numberWithFloat:[lowVal floatValue]]], [fmt stringFromNumber:[NSNumber numberWithFloat:[upVal floatValue]]]);

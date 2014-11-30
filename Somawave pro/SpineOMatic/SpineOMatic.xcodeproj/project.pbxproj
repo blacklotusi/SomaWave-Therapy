@@ -203,7 +203,7 @@
 		2F7198F818BCC63500BF0C20 /* tone_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tone_select@2x.png"; sourceTree = "<group>"; };
 		2F7198F918BCC63500BF0C20 /* up_arrow_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up_arrow_button.png; sourceTree = "<group>"; };
 		2F7198FA18BCC63500BF0C20 /* up_arrow_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up_arrow_button@2x.png"; sourceTree = "<group>"; };
-		3E1A8F101802CA2B00DA8F57 /* SpineOMatic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpineOMatic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E1A8F101802CA2B00DA8F57 /* SomaWave Pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SomaWave Pro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E1A8F131802CA2B00DA8F57 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3E1A8F151802CA2B00DA8F57 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		3E1A8F171802CA2B00DA8F57 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -430,7 +430,7 @@
 		3E1A8F111802CA2B00DA8F57 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3E1A8F101802CA2B00DA8F57 /* SpineOMatic.app */,
+				3E1A8F101802CA2B00DA8F57 /* SomaWave Pro.app */,
 				3E1A8F311802CA2B00DA8F57 /* SpineOMaticTests.xctest */,
 			);
 			name = Products;
@@ -544,7 +544,7 @@
 			);
 			name = SpineOMatic;
 			productName = SpineOMatic;
-			productReference = 3E1A8F101802CA2B00DA8F57 /* SpineOMatic.app */;
+			productReference = 3E1A8F101802CA2B00DA8F57 /* SomaWave Pro.app */;
 			productType = "com.apple.product-type.application";
 		};
 		3E1A8F301802CA2B00DA8F57 /* SpineOMaticTests */ = {
@@ -873,7 +873,7 @@
 				GCC_PREFIX_HEADER = "SpineOMatic/SpineOMatic-Prefix.pch";
 				INFOPLIST_FILE = "SpineOMatic/SpineOMatic-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "SomaWave Pro";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -891,7 +891,7 @@
 				GCC_PREFIX_HEADER = "SpineOMatic/SpineOMatic-Prefix.pch";
 				INFOPLIST_FILE = "SpineOMatic/SpineOMatic-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "SomaWave Pro";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};

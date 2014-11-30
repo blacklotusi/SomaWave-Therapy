@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3E1A8F0F1802CA2B00DA8F57"
-               BuildableName = "SpineOMatic.app"
+               BuildableName = "SomaWave Pro.app"
                BlueprintName = "SpineOMatic"
                ReferencedContainer = "container:SpineOMatic.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3E1A8F0F1802CA2B00DA8F57"
-            BuildableName = "SpineOMatic.app"
+            BuildableName = "SomaWave Pro.app"
             BlueprintName = "SpineOMatic"
             ReferencedContainer = "container:SpineOMatic.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3E1A8F0F1802CA2B00DA8F57"
-            BuildableName = "SpineOMatic.app"
+            BuildableName = "SomaWave Pro.app"
             BlueprintName = "SpineOMatic"
             ReferencedContainer = "container:SpineOMatic.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3E1A8F0F1802CA2B00DA8F57"
-            BuildableName = "SpineOMatic.app"
+            BuildableName = "SomaWave Pro.app"
             BlueprintName = "SpineOMatic"
             ReferencedContainer = "container:SpineOMatic.xcodeproj">
          </BuildableReference>
