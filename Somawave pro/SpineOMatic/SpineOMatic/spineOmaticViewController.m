@@ -426,6 +426,9 @@ numberOfRowsInComponent:(NSInteger)component
     NSLog(@"got hereee");
 
     [self setTextFieldPosition:_thumbTextField];
+
+    [self didTapPlayStopButton:nil];
+    [self didTapPlayStopButton:nil];
     
 }
 
